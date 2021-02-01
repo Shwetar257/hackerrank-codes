@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a[15],i,j,position,value;
+    for (i=0;i<=9;i++)
+    {
+        printf("enter the elements= ");
+        scanf("%d",&a[i]);
+
+    }
+    printf("enter index to insert the element = ");
+    scanf("%d",&position);
+    printf("enter the value to insert = ");
+    scanf("%d",&value);
+    for(i=9;i>position;i--);
+    a[i+1]=a[i];
+    a[position]=value;
+    printf("\n array after insertion =");
+    for(i=0;i<10;i++)
+    printf("\n %d",a[i]);
+    return 0;
+
+
+}
