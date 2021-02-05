@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n,rem,binary=0,place=1;
+    printf("enter a number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        rem=n%2;
+        binary+=rem*place;
+        place*=10;
+        n/=2;
+    }
+    printf("binary equivalent of %d is %d",n,binary);
+    return 0;
+}
